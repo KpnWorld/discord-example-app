@@ -2,6 +2,9 @@ import 'dotenv/config';
 import { getRPSChoices } from './game.js';
 import { capitalize, InstallGlobalCommands } from './utils.js';
 
+console.log("Token:", process.env.DISCORD_TOKEN);
+
+
 // Get the game choices from game.js
 function createCommandChoices() {
   const choices = getRPSChoices();
